@@ -89,7 +89,6 @@ h1, h2, h3 { font-family: var(--f-head); font-weight: 900; line-height: 1; }
 button.btn { font-family: inherit; cursor: pointer; background: none; }
 .menu-toggle { background: transparent; }
 .menu-toggle__label::before { content: attr(data-d); }
-.lbl-c { display: none; }
 .menu-panel--compact { display: none !important; }
 .menu-toggle__icon { width: 24px; height: 24px; background: url("assets/icons/menu.svg") center / contain no-repeat; }
 .menu-toggle[aria-expanded="true"] .menu-toggle__icon { background-image: url("assets/icons/close.svg"); }
@@ -360,8 +359,6 @@ button.btn { font-family: inherit; cursor: pointer; background: none; }
   .nav { display: none; }
   .menu-toggle { padding: 9px 23px; }
   .menu-toggle__label::before { content: attr(data-c); }
-  .lbl-d { display: none; }
-  .lbl-c { display: inline; }
   .menu-panel--about, .menu-panel--dirs { display: none !important; }
   .menu-panel--compact { display: grid !important; }
   .menu-panel--compact[hidden] { display: none !important; }
