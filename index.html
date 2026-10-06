@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Благодійний фонд Сергія Притули</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ Header ============ -->
+<header class="site-header">
+  <div class="menu-bar" id="menu-bar">
+    <div class="menu-bar__row">
+      <a class="logo" href="#" aria-label="Благодійний фонд Сергія Притули"><img src="assets/icons/logo.svg" alt="" width="223" height="32"></a>
+      <nav class="nav" aria-label="Основна навігація">
+        <a href="#projects">Проєкти</a>
+        <a href="#reports">Звітність</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="panel-about" data-toggle="about">Про фонд <svg class="chev" width="10" height="10" viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3.5 5 7l4-3.5" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <a href="#news">Новини</a>
+        <a href="#partners">Партнерства</a>
+      </nav>
+      <div class="menu-right">
+        <a class="lang" href="#"><img src="assets/icons/globe.svg" alt="" width="20" height="20">Eng</a>
+        <div class="cta-group">
+          <button class="btn btn--outline menu-toggle" type="button" aria-expanded="false" aria-controls="panel-dirs" data-toggle="dirs"><span class="menu-toggle__icon" aria-hidden="true"></span><span class="menu-toggle__label" data-d="Інші напрями" data-c="Меню"></span></button>
+          <a class="btn btn--black" href="#"><span class="lbl-d">Допомогти війську</span><span class="lbl-c">Підтримати</span></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Про фонд -->
+    <div class="menu-panel menu-panel--about" id="panel-about" data-panel="about" hidden>
+      <div class="menu-panel__inner">
+        <hr class="menu-panel__line">
+        <div class="menu-panel__body">
+          <div class="link-cards link-cards--about">
+            <a class="link-card" href="#"><img class="link-card__img" src="assets/img/m_about1.webp" alt="" style="left:-34px;top:14px;width:116px;height:116px"><span class="link-card__title">Інформація<br>про фонд</span><img class="link-card__arrow" src="assets/icons/arrow40.svg" alt="" width="40" height="40"></a>
+            <a class="link-card" href="#"><img class="link-card__img" src="assets/img/m_about2.webp" alt="" style="left:-20px;top:28px;width:92px;height:92px"><span class="link-card__title">Річні звіти</span><img class="link-card__arrow" src="assets/icons/arrow40.svg" alt="" width="40" height="40"></a>
+            <a class="link-card" href="#"><img class="link-card__img" src="assets/img/m_about3.webp" alt="" style="left:-28px;top:20px;width:108px;height:108px"><span class="link-card__title">Вакансії</span><img class="link-card__arrow" src="assets/icons/arrow40.svg" alt="" width="40" height="40"></a>
+          </div>
+          <div class="contact-details">
+            <div class="contact-details__social">
+              <a href="#" aria-label="Facebook"><img src="assets/icons/ms1.svg" alt="" width="24" height="24"></a>
+              <a href="#" aria-label="Instagram"><img src="assets/icons/ms2.svg" alt="" width="24" height="24"></a>
+              <a href="#" aria-label="Telegram"><img src="assets/icons/ms3.svg" alt="" width="24" height="24"></a>
+              <a href="#" aria-label="X"><img src="assets/icons/ms4.svg" alt="" width="24" height="24"></a>
+              <a href="#" aria-label="LinkedIn"><img src="assets/icons/ms5.svg" alt="" width="24" height="24"></a>
+              <a href="#" aria-label="YouTube"><img src="assets/icons/ms6.svg" alt="" width="24" height="24"></a>
+            </div>
+            <a class="contact-pill" href="tel:0800300114"><span><em>Гаряча лінія:</em> <b>0800 300 114</b></span><img src="assets/icons/mphone.svg" alt="" width="20" height="20"></a>
+            <a class="contact-pill" href="mailto:info@prytulafoundation.org"><b>info@prytulafoundation.org</b><img src="assets/icons/mmail.svg" alt="" width="20" height="20"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Інші напрями -->
+    <div class="menu-panel menu-panel--dirs" id="panel-dirs" data-panel="dirs" hidden>
+      <div class="menu-panel__inner">
+        <hr class="menu-panel__line">
+        <div class="menu-panel__body">
+          <div class="link-cards link-cards--dirs">
+            <a class="link-card" href="#"><img class="link-card__img" src="assets/img/m_dir1.webp" alt="" style="left:-20px;top:28px;width:92px;height:92px"><span class="link-card__title">Проєкти Гуманітарного<br>напрямку</span><img class="link-card__arrow" src="assets/icons/upright40.svg" alt="" width="40" height="40"></a>
+            <a class="link-card" href="#"><img class="link-card__img" src="assets/img/m_dir2.webp" alt="" style="left:-20px;top:28px;width:92px;height:92px"><span class="link-card__title">Навчання<br>цивільних</span><img class="link-card__arrow" src="assets/icons/upright40.svg" alt="" width="40" height="40"></a>
+            <a class="link-card" href="#"><img class="link-card__img" src="assets/img/m_dir3.webp" alt="" style="left:-20px;top:28px;width:92px;height:92px"><span class="link-card__title">Навчання<br>військових</span><img class="link-card__arrow" src="assets/icons/upright40.svg" alt="" width="40" height="40"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Меню (планшет / мобільний) -->
+    <div class="menu-panel menu-panel--compact" id="panel-compact" data-panel="compact" hidden>
+      <div class="menu-panel__inner">
+        <div class="cm">
+          <div class="cm__top">
+            <div class="cm__lang"><img src="assets/icons/globe.svg" alt="" width="20" height="20"><a href="#">Eng</a><span>|</span><a href="#">Ukr</a></div>
+            <a class="btn btn--black" href="#">Підтримати</a>
+          </div>
+          <ul class="cm__links">
+            <li><a href="#projects">Проєкти</a></li>
+            <li><a href="#reports">Звітність</a></li>
+            <li><a href="#mission">Інформація про фонд</a></li>
+            <li><a href="#reports">Річні звіти</a></li>
+            <li><a href="#">Вакансії</a></li>
+            <li><a href="#news">Новини</a></li>
+            <li><a href="#partners">Партнерства</a></li>
+          </ul>
+          <hr class="cm__line">
+          <div class="cm__other">
+            <p class="cm__label">Інші напрямки</p>
+            <div class="cm__cards">
+            <a class="link-card" href="#"><img class="link-card__img" src="assets/img/m_dir1.webp" alt=""><span class="link-card__title">Проєкти Гуманітарного напрямку</span><img class="link-card__arrow" src="assets/icons/upright40.svg" alt="" width="40" height="40"></a>
+            <a class="link-card" href="#"><img class="link-card__img" src="assets/img/m_dir2.webp" alt=""><span class="link-card__title">Навчання цивільних</span><img class="link-card__arrow" src="assets/icons/upright40.svg" alt="" width="40" height="40"></a>
+            <a class="link-card" href="#"><img class="link-card__img" src="assets/img/m_dir3.webp" alt=""><span class="link-card__title">Навчання військових</span><img class="link-card__arrow" src="assets/icons/upright40.svg" alt="" width="40" height="40"></a>
+            </div>
+          </div>
+          <div class="cm__contacts">
+            <div class="cm__social">
+              <a href="#" aria-label="Facebook"><img src="assets/icons/ms1.svg" alt="" width="24" height="24"></a>
+              <a href="#" aria-label="Instagram"><img src="assets/icons/ms2.svg" alt="" width="24" height="24"></a>
+              <a href="#" aria-label="Telegram"><img src="assets/icons/ms3.svg" alt="" width="24" height="24"></a>
+              <a href="#" aria-label="X"><img src="assets/icons/ms4.svg" alt="" width="24" height="24"></a>
+              <a href="#" aria-label="LinkedIn"><img src="assets/icons/ms5.svg" alt="" width="24" height="24"></a>
+              <a href="#" aria-label="YouTube"><img src="assets/icons/ms6.svg" alt="" width="24" height="24"></a>
+            </div>
+            <div class="cm__pills">
+              <a class="contact-pill" href="tel:0800300114"><span><em>Гаряча лінія:</em> <b>0800 300 114</b></span><img src="assets/icons/mphone.svg" alt="" width="20" height="20"></a>
+              <a class="contact-pill" href="mailto:info@prytulafoundation.org"><b>info@prytulafoundation.org</b><img src="assets/icons/mmail.svg" alt="" width="20" height="20"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ============ Hero ============ -->
+<section class="hero">
+  <div class="hero__image" style="background-image:url(assets/img/hero.webp)">
+    <div class="hero__content">
+      <div class="hero__header">
+        <h1>Єдинозбір</h1>
+        <p>Купуємо дрони-перехоплювачі Шахедів та комплектуємо екіпажі операторів необхідним обладнанням</p>
+      </div>
+      <div class="progress-card">
+        <div class="progress-card__stats">
+          <div class="bar" style="--p:66.3%"><span class="bar__fill"></span><span class="bar__pct">69%</span></div>
+          <div class="amounts">
+            <div><span class="label">Зібрано</span><b>571 819 486 ₴</b></div>
+            <div class="amounts__goal"><span class="label">Ціль</span><span>1 000 000 000 ₴</span></div>
+          </div>
+        </div>
+        <a class="btn btn--primary" href="#">Підтримати проєкт</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Active projects ============ -->
+<section class="projects" id="projects">
+  <div class="section-header">
+    <h2>Активні проєкти</h2>
+    <a class="btn btn--outline btn--arrow" href="#">Усі проєкти</a>
+  </div>
+  <div class="projects__grid">
+    <article class="project">
+      <img src="assets/img/proj1.webp" alt="" class="project__img">
+      <div class="project__body">
+        <div class="project__content">
+          <h3>Щелепи</h3>
+          <p>Смерть приходить з неба і в неї гострі зуби. Наша ціль — зібрати 500 млн. грн на БПЛА Shark-M та високоточні українські баражуючі боєприпаси.</p>
+          <div class="bar" style="--p:49.4%"><span class="bar__fill"></span><span class="bar__pct">69%</span></div>
+          <div class="amounts amounts--card">
+            <div><span class="label">Зібрано</span><b>48 388 780 ₴</b></div>
+            <div class="amounts__goal"><span class="label">Ціль</span><span>20 000 000 ₴</span></div>
+          </div>
+        </div>
+        <a class="btn btn--primary" href="#">Підтримати проєкт</a>
+      </div>
+    </article>
+    <article class="project">
+      <img src="assets/img/proj2.webp" alt="" class="project__img">
+      <div class="project__body">
+        <div class="project__content">
+          <h3>Чисте небо</h3>
+          <p>Збір на літаки-перехоплювачі, що нищать ворожі розвідувальні та ударні дрони в прифронтових містах та на лінії бойового зіткнення.</p>
+          <div class="bar" style="--p:49.4%"><span class="bar__fill"></span><span class="bar__pct">69%</span></div>
+          <div class="amounts amounts--card">
+            <div><span class="label">Зібрано</span><b>48 388 780 ₴</b></div>
+            <div class="amounts__goal"><span class="label">Ціль</span><span>20 000 000 ₴</span></div>
+          </div>
+        </div>
+        <a class="btn btn--primary" href="#">Підтримати проєкт</a>
+      </div>
+    </article>
+    <article class="project">
+      <img src="assets/img/proj3.webp" alt="" class="project__img">
+      <div class="project__body">
+        <div class="project__content">
+          <h3>Запали ворога</h3>
+          <p>21 млн на різні види дронів, РЕБи, пікапи і не тільки. Для підрозділу First Line ГУР МО України, які знищують російських окупантів як на фронті так і в їх тилу.</p>
+          <div class="bar" style="--p:49.4%"><span class="bar__fill"></span><span class="bar__pct">69%</span></div>
+          <div class="amounts amounts--card">
+            <div><span class="label">Зібрано</span><b>48 388 780 ₴</b></div>
+            <div class="amounts__goal"><span class="label">Ціль</span><span>20 000 000 ₴</span></div>
+          </div>
+        </div>
+        <a class="btn btn--primary" href="#">Підтримати проєкт</a>
+      </div>
+    </article>
+    <article class="project">
+      <img src="assets/img/proj4.webp" alt="" class="project__img">
+      <div class="project__body">
+        <div class="project__content">
+          <h3>Підсвіти ворога</h3>
+          <p>Мета проєкту зібрати кошти на 65 відстежувально-навідних комплексів, які допоможуть мобільним вогневим групам оперативно виявляти та знищувати ворожі повітряні цілі.</p>
+          <div class="bar" style="--p:49.4%"><span class="bar__fill"></span><span class="bar__pct">69%</span></div>
+          <div class="amounts amounts--card">
+            <div><span class="label">Зібрано</span><b>48 388 780 ₴</b></div>
+            <div class="amounts__goal"><span class="label">Ціль</span><span>30 000 000 ₴</span></div>
+          </div>
+        </div>
+        <a class="btn btn--primary" href="#">Підтримати проєкт</a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ Partners ============ -->
+<section class="partners" id="partners">
+  <div class="split">
+    <div class="partners__side">
+      <h2>Наші партнери</h2>
+      <p>Долучіться до посилення Сил Оборони України чи гуманітарної допомоги цивільному населенню, яке постраждало від російської агресії.</p>
+      <p>Ми непереможні, коли об’єднані!</p>
+      <a class="btn btn--outline-light" href="#">Усі партнери</a>
+    </div>
+    <div class="partners__main">
+      <div class="partner-info">
+        <div class="partner-info__text">
+          <h3>Холдинг емоцій «!FEST»</h3>
+          <p>Тепер !FEST – уже більш ніж ресторанна компанія. Ми маємо пивоварню, пиво якої визнане у світі; печемо свій хліб і смачнючі солодощі; робимо морозиво; шиємо одяг про Україну, який надає крила; будуємо нове, інакше житло у Львові; проводимо фестивалі, а ще вчимо творити майбутнє в нашій Школі вільних і небайдужих. Боротьба триває! ;).</p>
+        </div>
+        <img src="assets/img/fest.webp" alt="!FEST" width="238" height="121">
+      </div>
+      <div class="logos">
+        <a class="logo-card is-active" href="#"><img src="assets/img/pl1.webp" alt="!FEST"></a>
+        <a class="logo-card" href="#"><img src="assets/img/pl2.webp" alt="helsi"></a>
+        <a class="logo-card" href="#"><img src="assets/img/pl3.webp" alt="easy pay"></a>
+        <a class="logo-card" href="#"><img src="assets/img/pl4.webp" alt="UNIQA"></a>
+        <a class="logo-card" href="#"><img src="assets/img/pl5.webp" alt="Work.ua"></a>
+        <a class="logo-card" href="#"><img src="assets/img/pl6.webp" alt="EDS"></a>
+        <a class="logo-card" href="#"><img src="assets/img/pl7.webp" alt="Діла"></a>
+        <a class="logo-card" href="#"><img src="assets/img/pl8.webp" alt="Кран Ресурс"></a>
+        <a class="logo-card" href="#"><img src="assets/img/pl9.webp" alt="Smile"></a>
+        <a class="logo-card" href="#"><img src="assets/img/pl10.webp" alt="Завертайло"></a>
+        <a class="logo-card" href="#"><img src="assets/img/pl11.webp" alt="honey"></a>
+        <a class="logo-card" href="#"><img src="assets/img/pl12.webp" alt="SICH"></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ Reports ============ -->
+<section class="reports" id="reports">
+  <div class="split">
+    <div class="reports__side">
+      <h2>Передали<br>на сили оборони</h2>
+      <p>Від маленького дрона до супутника.</p>
+      <p>Щодня ми конвертуємо вашу довіру в технічне забезпечення Сил Оборони.</p>
+      <p>Ми звітуємо про кожну передачу, щоб ви бачили: системна підтримка змінює хід війни.</p>
+      <a class="btn btn--outline btn--arrow" href="#">Детальніша звітність</a>
+    </div>
+    <div class="reports__cards">
+      <div class="stat"><div class="stat__text"><b>₴8.4+ млрд</b><span>зібрано завдяки<br>вашій підтримці</span></div><img class="stat__img s1" src="assets/img/rep1.webp" alt=""></div>
+      <div class="stat"><div class="stat__text"><b>25 500+</b><span>передано засобів зв’язку<br>для українського війська</span></div><img class="stat__img s2" src="assets/img/rep2.webp" alt=""></div>
+      <div class="stat"><div class="stat__text"><b>27 500+</b><span>передано FPV-дронів та<br>ударних БПЛА і бомберів</span></div><img class="stat__img s3" src="assets/img/rep3.webp" alt=""></div>
+      <div class="stat"><div class="stat__text"><b>250+</b><span>передано<br>БПЛА літакового типу</span></div><img class="stat__img s6" src="assets/img/rep6.webp" alt=""></div>
+      <div class="stat"><div class="stat__text"><b>14 000+</b><span>передано<br>оптичних приладів</span></div><img class="stat__img s5" src="assets/img/rep5.webp" alt=""></div>
+      <div class="stat"><div class="stat__text"><b>100 000+</b><span>українців пройшли навчання<br>у центрах готовності цивільних</span></div><img class="stat__img s4" src="assets/img/rep4.webp" alt=""></div>
+      <div class="request">
+        <h3>Подати запит на отримання допомоги</h3>
+        <div class="request__row">
+          <p>Обов’язково потрібно додати скан/фото запиту від командування підрозділу, всі поля мають бути заповнені коректно, а в коментарях можуть бути прописані додаткові деталі про ваш запит/підрозділ.</p>
+          <a class="btn btn--primary btn--arrow" href="#">Подати запит на допомогу</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ News ============ -->
+<section class="news" id="news">
+  <div class="section-header">
+    <h2>Новини</h2>
+    <a class="btn btn--outline btn--arrow" href="#">Усі новини</a>
+  </div>
+  <div class="news__grid">
+    <a class="news-card" href="#">
+      <img src="assets/img/news1.webp" alt="">
+      <div class="news-card__body">
+        <div>
+          <div class="meta"><span>11/08/2025</span><i></i><span>Проєкт</span></div>
+          <h3>Завершено проєкт «Безпека UA: гуманітарне розмінування та готовність цивільних»</h3>
+        </div>
+        <span class="tag">WOGОНЬ Допомоги. Загін роботів 2.0</span>
+      </div>
+    </a>
+    <a class="news-card" href="#">
+      <img src="assets/img/news2.webp" alt="">
+      <div class="news-card__body">
+        <div>
+          <div class="meta"><span>11/08/2025</span><i></i><span>Проєкт</span></div>
+          <h3>Уроки війни: як аналітики фонду Сергія Притули ділились досвідом з НАТО</h3>
+        </div>
+        <span class="tag">WOGОНЬ Допомоги. Загін роботів 2.0</span>
+      </div>
+    </a>
+    <a class="news-card" href="#">
+      <img src="assets/img/news3.webp" alt="">
+      <div class="news-card__body">
+        <div>
+          <div class="meta"><span>11/08/2025</span><i></i><span>Проєкт</span></div>
+          <h3>Фонд переобладнав для полку «Ахіллес» три броньовані командно-штабні машини «Козак»</h3>
+        </div>
+        <span class="tag">WOGОНЬ Допомоги. Загін роботів 2.0</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ============ Mission ============ -->
+<section class="mission" id="mission">
+  <div class="mission__wrap">
+    <div class="mission__top">
+      <img src="assets/img/mission.webp" alt="" class="mission__img">
+      <div class="mission__text">
+        <h2>Місія фонду</h2>
+        <p>Місія фонду полягає у всебічному посиленні Сил Оборони України шляхом забезпечення підрозділів високотехнологічним обладнанням, транспортом та засобами зв’язку для ефективного знищення ворога.</p>
+        <p>Водночас організація працює над підвищенням стійкості суспільства через масштабні гуманітарні проєкти та навчання цивільного населення задля спільної Перемоги.</p>
+        <a class="btn btn--outline btn--arrow" href="#">Про фонд</a>
+      </div>
+    </div>
+    <div class="directions">
+      <h3>Основні напрями діяльності фонду:</h3>
+      <ul>
+        <li><a href="#"><span class="num">01</span><span class="name">Допомога військовим</span><img src="assets/icons/upright.svg" alt="" width="64" height="64"></a></li>
+        <li><a href="#"><span class="num">02</span><span class="name">Навчання військових</span><img src="assets/icons/upright.svg" alt="" width="64" height="64"></a></li>
+        <li><a href="#"><span class="num">03</span><span class="name">Допомога цивільним</span><img src="assets/icons/upright.svg" alt="" width="64" height="64"></a></li>
+        <li><a href="#"><span class="num">04</span><span class="name">Навчання цивільних</span><img src="assets/icons/upright.svg" alt="" width="64" height="64"></a></li>
+        <li><a href="#"><span class="num">05</span><span class="name">Prytula Foundation USA</span><img src="assets/icons/upright.svg" alt="" width="64" height="64"></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ============ Footer ============ -->
+<footer class="footer">
+  <div class="footer__cta">
+    <h2>Підсилюй Сили Оборони</h2>
+    <div class="footer__cta-row">
+      <p>Твій донат сьогодні - це знищений ворог завтра.<br>Долучайся до забезпечення військових необхідною технікою прямо зараз.</p>
+      <a class="btn btn--primary" href="#">Допомогти війську</a>
+    </div>
+  </div>
+  <div class="footer__panel">
+    <div class="footer__top">
+      <a href="#" aria-label="Благодійний фонд Сергія Притули"><img src="assets/icons/logowhite.svg" alt="" width="223" height="32"></a>
+      <div class="socials">
+        <a href="#" aria-label="Facebook"><img src="assets/icons/s1.svg" alt="" width="24" height="24"></a>
+        <a href="#" aria-label="Instagram"><img src="assets/icons/s2.svg" alt="" width="24" height="24"></a>
+        <a href="#" aria-label="Telegram"><img src="assets/icons/s3.svg" alt="" width="24" height="24"></a>
+        <a href="#" aria-label="X"><img src="assets/icons/s4.svg" alt="" width="24" height="24"></a>
+        <a href="#" aria-label="LinkedIn"><img src="assets/icons/s5.svg" alt="" width="24" height="24"></a>
+        <a href="#" aria-label="YouTube"><img src="assets/icons/s6.svg" alt="" width="24" height="24"></a>
+      </div>
+    </div>
+    <hr>
+    <div class="footer__bottom">
+      <div class="footer__links">
+        <ul><li><a href="#">Проєкти</a></li><li><a href="#">Звітність</a></li><li><a href="#">Про фонд</a></li></ul>
+        <ul><li><a href="#">Новини</a></li><li><a href="#">Партнерства</a></li><li><a href="#">Часті питання</a></li></ul>
+      </div>
+      <div class="contacts">
+        <a href="tel:0800300114"><img src="assets/icons/phone.svg" alt="" width="20" height="20"><span><em>Гаряча лінія:</em> <b>0800 300 114</b></span></a>
+        <a href="mailto:info@prytulafoundation.org"><img src="assets/icons/mail.svg" alt="" width="20" height="20"><b>info@prytulafoundation.org</b></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__copy">
+    <span>© 2025 Благодійний фонд Сергія Притули. Всі права захищені.</span>
+    <img src="assets/icons/ot.svg" alt="Розроблено в OpenTech" height="20">
+  </div>
+</footer>
+
+<script src="menu.js"></script>
+</body>
+</html>
